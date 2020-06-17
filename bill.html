@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Heading section -->
+    <div>
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <p>Jiro Restaurant</p>
+    </div>
+    <!-- Form taking inputs -->
+    <form id="form">
+        <select id="type">
+            <option value="Nigiri">Nigiri</option>
+            <option value="Shashimi">Shashimi</option>
+            <option value="Maki">Maki</option>
+            <option value="Uramaki">Uramaki</option>
+            <option value="Temaki">Temaki</option>
+        </select>
+        <input type="number" id="plates" placeholder="Number of Plates"/>
+        <select id="rate">
+            <option value="3000">$3000</option>
+            <option value="2000">$2000</option>
+            <option value="1500">$1500</option>
+            <option value="2000">$2000</option>
+            <option value="1000">$1000</option>
+        </select>
+        <!-- <input type="number" id="amount" placeholder="Amount"/> -->
+        <br/>
+        <br/>
+        <input type="submit" value="Add to List"/>
+    </form>
+    <br/>
+    <!-- Table for displaying the list -->
+    <table align="center" id="records" border=1>
+        <tr>
+          <td>Type</td>
+          <td>Plates</td>
+          <td>Rate</td>
+          <td>Amount</td>
+        </tr>
+      </table>
+    <script src="script.js"></script>
+</body>
+</html>
