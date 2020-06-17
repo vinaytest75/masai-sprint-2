@@ -25,10 +25,22 @@ window.onload = function(){
     // var amount = document.getElementById("amount").value;
     sushi.amount = rate*plates;
     
-    total = total + rate*plates;
-    var totalAmt1 = document.getElementById('result');
-    totalAmt1.textContent = "Bill to be Paid "+"$"+total
-
+    total = total + (rate*plates);
+    var totalAmt = document.getElementById('result');
+    totalAmt.textContent = "Total Amount "+"$"+total
+    
+    var tax = (0.05*total);                        // Added 5% tax
+    var resTax = document.getElementById('tax');
+    resTax.textContent = "Tax "+"$"+tax
+    
+    var tip = (0.01*total);                               // Added 1% Tip
+    var resTip = document.getElementById('tip');
+    resTip.textContent = "Tip "+"$"+tip
+      
+    var totalBill = total + tax + tip;                  //Added total bill  
+    var resTotalBill = document.getElementById('totalBill');
+    resTotalBill.textContent = "Total Bill to be paid $"+(totalBill);
+    
     displayTable();
     })
 }
