@@ -5,6 +5,7 @@ var sushi = {
     rate: "",
     amount: 0
 }
+var total = 0;
   
 window.onload = function(){
     
@@ -23,11 +24,14 @@ window.onload = function(){
 
     // var amount = document.getElementById("amount").value;
     sushi.amount = rate*plates;
-      
     
+    total = total + rate*plates;
+    var totalAmt1 = document.getElementById('result');
+    totalAmt1.textContent = "Bill to be Paid "+"$"+total
+
     displayTable();
     })
-  }
+}
   
   // Creating the Table
   function displayTable() {
