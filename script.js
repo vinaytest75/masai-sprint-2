@@ -36,12 +36,24 @@ window.onload = function(){
     var tip = (0.01*total);                               // Added 1% Tip
     var resTip = document.getElementById('tip');
     resTip.textContent = "Tip "+"$"+tip
-      
-    var totalBill = total + tax + tip;                  //Added total bill  
-    var resTotalBill = document.getElementById('totalBill');
-    resTotalBill.textContent = "Total Bill to be paid $"+(totalBill);
+
+    var discount = (0.1*total)
+    var disc = document.getElementById("disc")
     
-    displayTable();
+    if(total>1000){
+        disc.textContent = "Congratulations, you got 10% discount & You save $"+discount
+
+        var totalBill = total - discount +tax + tip;                  //Added total bill  
+        var resTotalBill = document.getElementById('totalBill');
+        resTotalBill.textContent = "Total Bill to be paid $"+(totalBill);
+    }
+    else{ 
+        var totalBill = total + tax + tip;                  //Added total bill  
+        var resTotalBill = document.getElementById('totalBill');
+        resTotalBill.textContent = "Total Bill to be paid $"+(totalBill);
+    }
+        displayTable();
+        
     })
 }
   
