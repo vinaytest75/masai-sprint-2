@@ -1,8 +1,15 @@
 
 # Bill Generator Project
+![HomePage](https://raw.githubusercontent.com/vinaytest75/masai-sprint-2/master/resources/HomePage.png)
+
+## Technologies Used
+* HTML
+* CSS
+* Javascript
 
 ## Design and implement a system to generate the bill at a Jiro Restaurant.
 
+![Bill Generator Page](https://raw.githubusercontent.com/vinaytest75/masai-sprint-2/master/resources/BillGeneratorPage.png)
 ### Functonality of Jiro Restaurant Bill Generator Website: 
   * Feature to add an entry of ordered items along with Quantity & Total Price of that item.
   * Feature of showing ordered item in Tabular form.
@@ -19,5 +26,6 @@
   * The total bill amount to be paid after the tax, tips and/or discount.
   
 ### Other Small Features:
+![Menu](https://raw.githubusercontent.com/vinaytest75/masai-sprint-2/master/resources/MenuPage.png)
   * Have a webpage with menu describing about the available items.
   * link to contact the owner of restaurant for complaint & feedback.
